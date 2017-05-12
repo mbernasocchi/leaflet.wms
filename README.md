@@ -163,6 +163,10 @@ var MySource = L.WMS.Source.extend({
         $('.output').html(info);
     }
 });
+var s = new MySource("http://localhost/.....", {
+			'format': "image/png"
+   });
+s.getLayer("layer_name").addTo(map);
 ```
 
 The following hooks are available:
